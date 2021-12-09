@@ -18,5 +18,5 @@ app.use("/api", require("./routes/apiRoutes"))
 
 // Let the user know the server is running, and which port.  Yeay!
 app.listen(PORT, () => {
-    console.log(`listening at http://localhost${PORT}`);
+    console.log(`listening at http://localhost:${PORT}`);
 });
