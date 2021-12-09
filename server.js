@@ -1,6 +1,7 @@
 // Required Consts!
 const express = require("express")
 const app = express();
+const path = require("path");
 
 
 
@@ -14,6 +15,7 @@ app.use(express.json());
 
 // API Routes start with API and live at apiRoutes.js
 app.use("/api", require("./routes/apiRoutes"))
+app.use("/user", require("./routes/userRoutes"))
 
 
 // Let the user know the server is running, and which port.  Yeay!
